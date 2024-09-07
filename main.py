@@ -9,7 +9,7 @@ load_dotenv()
 try:
     EMAIL = os.getenv("EMAIL")
     SENHA = os.getenv("SENHA")
-
+    
     client = Client()
     profile = client.login(EMAIL, SENHA)
 except Exception as ex:
